@@ -1,0 +1,179 @@
+/* app_receitas/static/app_receitas/css/style.css */
+
+/* Estilos Globais */
+
+/* CORPO DA PAGINA */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px; /* Espaço ao redor do formulário */
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    max-width: 600px; /* Define uma largura máxima para o input */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #1d1c1c;
+    color: #007bff;
+}
+
+
+/* ONDE ESTÃO OS LINKS */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #b3aeb2;
+    text-decoration: none;
+}
+
+/* DENTRO DO CORPO ONDE ESTA O */
+/*main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    color: #333;
+}*/
+
+main {
+    padding-top: 20px; /* Altura do header para evitar sobreposição */
+    padding-bottom: 20px; /* Altura do footer para evitar sobreposição */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+/* RODAPÉ */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+footer a {
+    color: #fff; 
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #967696; 
+    text-decoration: none;
+  }
+
+
+.contato-form form {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contato-form label {
+    margin-bottom: 5px; 
+}
+
+.contato-form input, textarea {
+    width: 40%; 
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.contato-form button {
+    padding: 7px 10px; 
+    background-color: #007bff;
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.contato-form button:hover {
+    background-color: #007bff; 
+}
+
+
+.login-form form {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.login-form label {
+    margin-bottom: 5px; 
+}
+
+.login-form input {
+    width: 20%; 
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.login-form button {
+    padding: 7px 10px; 
+    background-color: #007bff;
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.login-form button:hover {
+    background-color: #007bff; 
+}

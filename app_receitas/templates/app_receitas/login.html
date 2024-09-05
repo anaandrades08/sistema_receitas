@@ -1,0 +1,11 @@
+<!-- app_receitas/templates/app_receitas/login.html -->
+
+        <h1>Login</h1>
+        <form  class="login-form" method="post">
+            {% csrf_token %}
+            <p><label for="usuario">Usuário:</label></p>
+            <input type="text" id="usuario" name="usuario" required>
+            <p><label for="senha">Senha:</label></p>
+            <input type="password" id="senha" name="senha" required>
+            <br><button type="submit">Login</button>
+        </form>

@@ -1,0 +1,40 @@
+<!-- app_receitas/templates/app_receitas/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>+Receitas+</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app_receitas/css/styles.css' %}">
+    <script src="{% static 'app_receitas/js/script.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>+Receitas</h1>
+            </div>
+            <div class="search-form">
+                <form class="search-form" onclick="loadContent('{% url 'inicio' %}');" method="GET">
+                    <input type="text" name="q" placeholder="Buscar receitas...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="loadContent('{% url 'inicio' %}'); return false;">Home</a></li>
+                        <li><a href="#" onclick="loadContent('{% url 'login' %}'); return false;">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="conteudo">
+        <!-- Conteúdo dinâmico será carregado aqui -->
+    </main>
+
+    <footer>
+        <a href="#" onclick="loadContent('{% url 'quemsomos' %}'); return false;">Quem Somos</a> | <a href="#" onclick="loadContent('{% url 'politicaprivacidade' %}'); return false;"> Política de Privacidade</a> | <a href="#" onclick="loadContent('{% url 'contato' %}'); return false;">Contato</a>
+    </footer>
+</body>
+</html>
